@@ -1,0 +1,51 @@
+.mainActive {
+    transition: 500ms;
+    overflow: hidden;
+    background-color: #eee;
+    width: 200px;
+    min-height: 100vh;
+    height: 100%;
+    padding: 10px 0;
+}
+.mainNotActive {
+    background-color: #eee;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    padding: 10px 0;
+}
+
+.title {
+    margin: 2px 0 ;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+.singleList {
+    border-top:1px solid black ;
+    background-color: white;
+    padding: 5px 0 0 0;
+    cursor: pointer;
+}
+.singleList:last-of-type {
+    border-bottom:1px solid black ;
+}
+.singleList:hover {
+    background: #e1e1;
+}
+
+.parInList {
+    margin: 0;
+    overflow: hidden;
+    height: 0;
+}
+.parInListActive {
+    transition: 500ms;
+    background-color: #eee;
+    margin: 15px 0 0  0;
+    padding: 15px 0 ;
+    overflow: hidden;
+    height: auto;
+}

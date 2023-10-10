@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Navbar from './component/Navbar';
 
 function App() {
+  const [is,setIs] =useState(false);
+  const handelOpen = () => {
+    setIs(e =>!e);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={handelOpen}
+      style={{position:"absolute",top:"10px",right:"30px"}}>
+        {is ? 'close' : 'open'}
+      </button>
+      <Navbar isOpen={is}/>
     </div>
   );
 }
